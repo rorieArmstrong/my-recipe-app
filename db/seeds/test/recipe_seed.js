@@ -1,7 +1,7 @@
 exports.seed = function(knex, Promise) {
-    return knex('shows').del() // Deletes ALL existing entries
+    return knex('recipes').del() // Deletes ALL existing entries
       .then(function() { // Inserts seed entries one by one in series
-        return knex('shows').insert({
+        return knex('recipes').insert({
             id: 1,
             Title: "Pasta al Limone",
             Ingredients: "1 lemon, 12 oz. spaghetti, salt, ¾ cup heavy cream, 6 Tbsp. unsalted butter, 3 oz. finely grated Parmesan (about ¾ cup), Freshly ground black pepper",

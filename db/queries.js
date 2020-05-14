@@ -1,7 +1,7 @@
 var knex = require('./knex.js');
 
 function Recipes() {
-  return knex('shows');
+  return knex('recipes');
 }
 
 // *** queries *** //
@@ -11,7 +11,7 @@ function getAll() {
 }
 
 function get(x) {
-  return Recipes().select().where('id', '<', x);
+  return Recipes().select().where('id', '<=', x);
 }
 
 function getSingle(ID) {
