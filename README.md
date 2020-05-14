@@ -1,7 +1,7 @@
 # my-recipe-app
 
 The application must:
-have a restful api using crud action
+have a restful api using crud action &#x2611
 Be tested to a minimum of 40%
 Have a .env file for storing username and passwords &#x2611
 Be documented (readme including a how to use section) &#x2611

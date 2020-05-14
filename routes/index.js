@@ -53,9 +53,7 @@ router.post('/recipe', (req, res, next) => {
 //   update recipe 
   router.put('/:id', (req, res, next) => {
     if(req.body.hasOwnProperty('id')) {
-      return res.status(422).json({
-        error: 'You cannot update the id field'
-      });
+      return res.status(422).send({error: 'You cannot update the id field'});
     }
     db.update(req.params.id, req.body)
     .then(function() {
