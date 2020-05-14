@@ -4,6 +4,7 @@ const db = require('../db/queries.js');
 
 // GET all recipes
 router.get('/all', function(req, res, next) {
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000')
    db.getAll()
    .then((recipes) => {
         res.status(200).json(recipes);

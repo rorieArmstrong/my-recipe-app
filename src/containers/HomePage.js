@@ -23,6 +23,7 @@ class HomePage extends Component {
                     <Link to="/input" ><button>Create a new recipe</button></Link>
                     <input type="text" placeholder="Recipe ID" value={this.state.id} onChange={this.handleChange} />
                     <Link to={`/recipe/${this.state.id}`} ><button>View recipe {this.state.id}</button></Link>
+                    <Link to={`/all`} ><button>View all recipes</button></Link>
                 </div>
             </div>
         );
