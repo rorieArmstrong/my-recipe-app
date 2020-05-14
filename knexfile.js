@@ -1,13 +1,14 @@
 require('dotenv').config({path: './.env'});
 
+
 module.exports = {
     test: {
       client: 'pg',
       connection: {
         host: process.env.DB_HOST,
-        username: process.env.DB_USER,
+        user: process.env.DB_USER,
         password: process.env.DB_PASS,
-        port: 8000,
+        port: 5000,
         database: 'recipes_test'
       },
       migrations: {
@@ -21,16 +22,16 @@ module.exports = {
       client: 'pg',
       connection: {
         host: process.env.DB_HOST,
-        username: process.env.DB_USER,
+        user: process.env.DB_USER,
         password: process.env.DB_PASS,
-        port: 8000,
+        port: 5000,
         database: 'recipes'
       },
       migrations: {
         directory: __dirname + '/db/migrations'
       },
       seeds: {
-        directory: __dirname + '/db/seeds/dev'
+        directory: __dirname + '/db/seeds/development'
       }
     },
     production: {
@@ -44,3 +45,4 @@ module.exports = {
       }
     }
   };
+  

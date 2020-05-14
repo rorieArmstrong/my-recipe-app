@@ -18,11 +18,26 @@ Have a react front end &#x2611
 
 ## Instructions to start
 create a `.env` file
+
+Install dependencies - `npm install`
+
+Download Postgres
+
+Install Knex globaly - `npm install knex -g`
+
+Create two local Postgres databases - `recipes` and `recipes_test`
+
 in the dotenv file add your:
 DB_HOST
 DB_USER
 DB_PASS
+
+Migrate - `knex migrate:latest --env development`
+
+Seed - `knex seed:run --env development`
+
 run `node server.js`
+
 then in a new terminal run `npm start`
 
 
