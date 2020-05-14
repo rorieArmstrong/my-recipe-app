@@ -40,6 +40,15 @@ run `node server.js`
 
 then in a new terminal run `npm start`
 
+## Rorie 
+### What I/we have learned
+how to remove migration files with pg
+### What challenges I/we overcame
+having duplicate migrations
+### What I/we struggled with
+knex safly deleting migration file
+### What I/we would do differently next time
+
 
 ## Available Scripts
 

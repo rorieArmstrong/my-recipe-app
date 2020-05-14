@@ -14,3 +14,5 @@ app.use('/api', routes);
 
 app.listen(port);
 console.log("listening on potrt: "+port)
+
+module.exports = app;
