@@ -2,16 +2,16 @@
 
 The application must:
 have a restful api using crud action &#x2611
-Be tested to a minimum of 40%
+Be tested to a minimum of 40% &#x2611
 Have a .env file for storing username and passwords &#x2611
 Be documented (readme including a how to use section) &#x2611
 
 The application should:
-Be able to fetch and present a recipe
-Enter a new recipe
-Update a recipe
-Delete a recipe
-Be nicely styled
+Be able to fetch and present a recipe &#x2611
+Enter a new recipe &#x2611
+Update a recipe &#x2611
+Delete a recipe &#x2611
+Be nicely styled &#x2611
 
 The application could:
 Have a react front end &#x2611

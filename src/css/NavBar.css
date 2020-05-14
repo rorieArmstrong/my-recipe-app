@@ -1,0 +1,27 @@
+.navbar{
+    display: flex;
+    align-content: space-between;
+    width: 100vw;
+    background-color: #366c6c;
+    color: whitesmoke;
+    position: sticky;
+    height: 50px;
+    overflow: hidden;
+    top: 0;
+}
+
+.styledLink{
+    display: flex;
+    color: whitesmoke;
+    text-decoration: none;
+    width: 25vw;
+    justify-content: center;
+    padding: 14px 16px;
+    align-items: center;
+    font-size: large;
+}
+
+.styledLink:hover {
+    background: #ddd;
+    color: black;
+  }

@@ -137,10 +137,10 @@ describe('API Routes', function() {
     it('should delete a show', function(done) {
       chai.request(server)
       .delete('/api/1')
-      .end(function(error, response) {
-        response.should.have.status(200);
-        response.should.be.json; // jshint ignore:line
-        response.body.should.be.a('object');
+      .end(function(error, res) {
+        res.should.have.status(200);
+        res.should.be.json; // jshint ignore:line
+        res.body.should.be.a('object');
         res.body.should.have.property('Title');
         res.body.Title.should.equal('Pasta al Limone');
         res.body.should.have.property('Ingredients');
