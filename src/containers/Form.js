@@ -22,15 +22,14 @@ class Recipe extends Component {
     }
     
     render() {
-        console.log(this.state)
         return (
             <div>
                 <NavBar/>
                 <div className="container">
-                    <form className="inputs" action="http://localhost:8000/api/activity" method="POST">
+                    <form className="inputs" action="http://localhost:8000/api/recipe" method="POST">
                         <input type="text" placeholder="Title" value={this.state.value} name='Title' onChange={this.handleChange} />
-                        <input type="text" placeholder="Ingredients" value={this.state.value} name='Title' onChange={this.handleChange} />
-                        <input type="text" placeholder="Method" value={this.state.Method} name='Title' onChange={this.handleChange} />
+                        <input type="text" placeholder="Ingredients" value={this.state.value} name='Ingredients' onChange={this.handleChange} />
+                        <input type="text" placeholder="Method" value={this.state.Method} name='Method' onChange={this.handleChange} />
                         <input type="text" placeholder="Dificulty" value={this.state.Dificulty} name='Dificulty' onChange={this.handleChange} />
                         <button type="submit">Submit</button>
                     </form>

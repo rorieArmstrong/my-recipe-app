@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import NavBar from '../components/NavBar';
 
 class Recipe extends Component {
     render() {
@@ -6,7 +7,7 @@ class Recipe extends Component {
             <div>
                 <NavBar/>
                 <div className="container">
-                    
+
                 </div>
                 
             </div>
