@@ -2,16 +2,17 @@ body{
   display: flex;
   text-align: center;
   justify-content: center;
-  color: #366c6c;
+  color: #999550;
+  background-color: #FFFAEB;
 }
 
 form { 
-  border: 3px solid #42a680;
-  background-color: 	#a8e999;
+  border: 3px solid #999550;
+  background-color: 	#7AB6FF;
 } 
   
 input[type=text]{ 
-  width: 100%; 
+  width: 80%; 
   padding: 12px 20px; 
   margin: 8px 0; 
   display: inline-block; 
@@ -20,15 +21,16 @@ input[type=text]{
 }  
   
 button { 
-  background-color: #457d7e; 
-  color: white; 
+  background-color: #A7C1CC; 
+  color: #999550; 
   padding: 14px 20px; 
   margin: 8px 0; 
   border: none; 
   cursor: pointer; 
-  width: 100%; 
+  width: 80%; 
 }
   
 .container { 
-  padding: 16px; 
+  border: 3px solid #7AB6FF;
+  padding: 16px;
 }

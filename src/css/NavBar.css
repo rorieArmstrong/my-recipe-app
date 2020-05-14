@@ -2,8 +2,8 @@
     display: flex;
     align-content: space-between;
     width: 100vw;
-    background-color: #366c6c;
-    color: whitesmoke;
+    background-color: #7AB6FF;
+    color: #FFFAEB;
     position: sticky;
     height: 50px;
     overflow: hidden;
@@ -12,7 +12,7 @@
 
 .styledLink{
     display: flex;
-    color: whitesmoke;
+    color: #FFFAEB;
     text-decoration: none;
     width: 25vw;
     justify-content: center;
@@ -22,6 +22,6 @@
 }
 
 .styledLink:hover {
-    background: #ddd;
-    color: black;
+    background: #999550;
+    color: #FFFAEB;
   }
