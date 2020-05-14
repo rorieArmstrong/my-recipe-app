@@ -14,6 +14,7 @@ router.get('/all', function(req, res, next) {
 
 // GET a single recipe by id
 router.get('/:id', (req, res, next) => {
+    res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
     db.getSingle(req.params.id)
     .then(function(show) {
       res.status(200).json(show);
