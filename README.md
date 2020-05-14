@@ -1,7 +1,29 @@
 # my-recipe-app
 
+The application must:
+have a restful api using crud action
+Be tested to a minimum of 40%
+Have a .env file for storing username and passwords &#x2611
+Be documented (readme including a how to use section) &#x2611
 
+The application should:
+Be able to fetch and present a recipe
+Enter a new recipe
+Update a recipe
+Delete a recipe
+Be nicely styled
 
+The application could:
+Have a react front end &#x2611
+
+## Instructions to start
+create a `.env` file
+in the dotenv file add your:
+DB_HOST
+DB_USER
+DB_PASS
+run `node server.js`
+then in a new terminal run `npm start`
 
 
 ## Available Scripts
