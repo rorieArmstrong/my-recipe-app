@@ -23,7 +23,7 @@ class Recipe extends Component {
 
     render() {
         console.log(this.state)
-        if (this.state.data == {} ){
+        if (this.state.data === {} ){
             return (
                 <div>
                     <h3>
