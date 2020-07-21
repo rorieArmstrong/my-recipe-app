@@ -1,22 +1,34 @@
-import React from 'react';
-import HomePage from './containers/HomePage';
-import Form from './containers/Form';
-import Recipe from './containers/Recipe';
-import All from './containers/All';
-import { Route, Switch, BrowserRouter as Router} from "react-router-dom";
-import './css/App.css';
+import React, {useEffect, useState} from 'react';
+import './App.css';
+
 
 function App() {
+
+  const APP_ID = "30ea1814"
+  const APP_KEY = "63d67ba42bad55130aa3641451da3ceb"
+  const querry = ""
+  const req = `https://api.edamam.com/search?q=${querry}&app_id=${APP_ID}&app_key=${APP_KEY}`
+
+  var [counter, setCounter] = useState(0)
+  
+  useEffect(()=> {
+    console.log('Effect has run')
+  })
+
+
   return (
     <div className="App">
-      <Router>
-        <Switch>
-          <Route path='/' exact  component={HomePage}/>
-          <Route path='/input' component={Form} />
-          <Route path='/recipe/:id' component={Recipe}/>
-          <Route path='/all' component={All}/>
-        </Switch>
-      </Router>
+      <h1>Hello</h1>
+      <form>
+        <input className="searchBar" type="text"/>
+        <button 
+          className="searchButton" 
+          type="submit"
+          onClick={() => setCounter(counter++)}>
+            Search
+        </button>
+      </form>
+      <h3 onClick={() => setCounter(counter++)}> {counter}</h3>
     </div>
   );
 }
